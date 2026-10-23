@@ -180,9 +180,6 @@ if [ ${TNCONFIGS} != 0 -o ${FSLCONFIGS} != 0 ] ; then
   # add TechNexion wifi layers to bblayers.conf
   tn_auto_append_layer "$WORK_DIR" "wifi" "meta-tn-wifi"
 
-  # add TechNexion vizionsdk layers to bblayers.conf
-  tn_auto_append_layer "$WORK_DIR" "vizionsdk" "meta-tn-vizionsdk"
-
   # add TechNexion nfc bsp layers (from nxp) to bblayers.conf
   tn_auto_append_layer "$WORK_DIR" "nfc" "meta-nxp-nfc"
 
